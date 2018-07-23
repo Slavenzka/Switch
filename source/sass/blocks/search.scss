@@ -1,0 +1,25 @@
+.search__input {
+  margin-top: 4px;
+  margin-right: -1px;
+  padding: 5px 0 6px 13px;
+  width: 179px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.search__input::placeholder {
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 300;
+  color: $font-color__search;
+}
+
+.search__input:-ms-input-placeholder {
+  font-family: $font-family__headings;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 300;
+  color: $font-color__search;
+}
