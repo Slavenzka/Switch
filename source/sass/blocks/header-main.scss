@@ -1,0 +1,32 @@
+.header-main {
+  color: $font-color__light;
+}
+
+.header-main .container {
+  display: flex;
+  justify-content: space-between;
+  background-color: $background__dark;
+}
+
+.header-main__logo {
+  margin-top: 2px;
+  margin-left: -173px;
+  font-family: $font-family__logo;
+  font-size: 24px;
+  line-height: normal;
+  color: $font-color__light;
+}
+
+.header-main__search {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/icon-search.svg");
+  }
+}

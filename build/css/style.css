@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("../fonts/proximanova-regular-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("../fonts/proximanova-regular-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/proxima_nova_bold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_bold-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "Nautilus Pompilius";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/nautilus-webfont.woff2") format("woff2"), url("../fonts/nautilus-webfont.woff") format("woff"); }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  height: 1000px;
+  background-color: white; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 1170px; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  font-size: 0; }
+
+.header-main {
+  color: white; }
+
+.header-main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #333333; }
+
+.header-main__logo {
+  margin-top: 2px;
+  margin-left: -173px;
+  font-family: "Nautilus Pompilius", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: normal;
+  color: white; }
+
+.header-main__search {
+  position: relative; }
+  .header-main__search::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/icon-search.svg"); }
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  list-style: none; }
+
+.nav__link {
+  display: block;
+  padding-top: 6px;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+  color: white; }
+
+.search__input {
+  margin-top: 4px;
+  margin-right: -1px;
+  padding: 5px 0 6px 13px;
+  width: 179px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.search__input::-webkit-input-placeholder {
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 300;
+  color: #111111; }
+
+.search__input:-ms-input-placeholder {
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 300;
+  color: #111111; }
+
+.search__input::-ms-input-placeholder {
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 300;
+  color: #111111; }
+
+.search__input::placeholder {
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 300;
+  color: #111111; }
+
+.search__input:-ms-input-placeholder {
+  font-family: "ProximaNova", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 300;
+  color: #111111; }
