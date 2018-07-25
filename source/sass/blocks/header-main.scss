@@ -1,10 +1,8 @@
 .header-main {
-  color: $font-color__light;
-}
-
-.header-main .container {
   display: flex;
   justify-content: space-between;
+  padding: 0 30px;
+  color: $font-color__light;
 }
 
 .header-main__logo {
