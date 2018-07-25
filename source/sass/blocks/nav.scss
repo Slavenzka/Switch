@@ -8,6 +8,7 @@
 }
 
 .nav__link {
+  position: relative;
   display: block;
   padding-top: 6px;
   font-family: $font-family__headings;
@@ -15,4 +16,18 @@
   line-height: normal;
   font-weight: 400;
   color: $font-color__light;
+
+  &:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: $background__highlight;
+  }
+
+  &:active {
+    text-shadow: 0.05rem 0px 0 $font-color__light;
+  }
 }

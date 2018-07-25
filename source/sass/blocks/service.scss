@@ -1,0 +1,85 @@
+.service {
+  position: relative;
+  margin-top: 234px;
+  width: 350px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -163px;
+    left: 104px;
+    width: 142px;
+    height: 142px;
+    background-color: $background__service-icon;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+  }
+}
+
+.service:first-of-type {
+  &::before {
+    left: 99px;
+    background-image: url("../img/service__icon--foto.svg");
+    background-size: 86px 74px;
+    background-position: 29px 34px;
+  }
+}
+
+.service:nth-of-type(2) {
+  &::before {
+    background-image: url("../img/service__icon--speed.svg");
+    background-size: 86px 68px;
+    background-position: 27px 33px;
+  }
+}
+
+.service:nth-of-type(3) {
+  &::before {
+    left: 99px;
+    background-image: url("../img/service__icon--case.svg");
+    background-size: 86px 74px;
+    background-position: 27px 31px;
+  }
+}
+
+.service__title {
+  margin: 0;
+  padding-right: 7px;
+  font-family: $font-family__headings;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  color: $font-color__dark;
+}
+
+.service__description {
+  margin: 0;
+  margin-top: 15px;
+  padding: 0 25px;
+  font-family: $font-family__text;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  font-color: $font-color__dark;
+}
+
+.service__button {
+  margin: 0;
+  margin-top: 24px;
+  padding: 5px 0 5px 0;
+  width: 120px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.service:first-of-type .service__button {
+  margin-left: 108px;
+}
+
+.service:nth-of-type(2) .service__button {
+  margin-left: 112px;
+}
+
+.service:nth-of-type(3) .service__button {
+  margin-left: 116px;
+}

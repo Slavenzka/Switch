@@ -21,10 +21,34 @@ img {
   max-width: 100%;
 }
 
-.container {
+.main-grid {
+  display: grid;
+  grid-template-columns: auto 1170px auto;
+
+  // А IE лучше без гридов. Прости. Не болей.
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+.main-grid > * {
+  grid-column: 2;
+}
+
+.button {
+  display: block;
   margin: 0 auto;
-  padding: 0 30px;
-  width: 1170px;
+  padding: 11px 0 10px 0;
+  font-family: $font-family__headings;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: normal;
+  color: $font-color__light;
+  background-color: $background__highlight;
+  border: none;
+  border-radius: 23px;
 }
 
 .visually-hidden {
