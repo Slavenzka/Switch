@@ -1,8 +1,10 @@
 .header-main {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
   color: $font-color__light;
+  z-index: 1;
 }
 
 .header-main__logo {
