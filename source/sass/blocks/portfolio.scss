@@ -1,0 +1,122 @@
+.portfolio {
+  padding-top: 40px;
+  padding-bottom: 53px;
+  text-align: center;
+  background-color: $background__highlight;
+}
+
+.portfolio__title {
+  position: relative;
+  margin: 0;
+  padding-left: 2px;
+  font-family: $font-family__text;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: normal;
+  color: $font-color__portfolio-title;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: calc(50% - 21px);
+    width: 43px;
+    height: 2px;
+    background-color: $font-color__portfolio-title;
+  }
+}
+
+.portfolio__intro {
+  margin: 0;
+  margin-top: 21px;
+  padding-left: 8px;
+  font-family: $font-family__special;
+  font-size: 15.5px;
+  color: $font-color__portfolio;
+}
+
+.portfolio__intro span {
+  font-family: $font-family__text;
+  font-size: 15px;
+}
+
+.portfolio__selection {
+  margin: 0;
+  margin-left: 4px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.portfolio__type:not(:first-of-type) {
+  margin-left: -1px;
+}
+
+.portfolio__type:first-of-type .portfolio__switch {
+  padding-right: 16px;
+  padding-left: 13px;
+  min-width: 122px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.portfolio__type:last-of-type .portfolio__switch {
+  padding-right: 16px;
+  padding-left: 17px;
+  min-width: 69px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.portfolio__type:not(:first-of-type):not(:last-of-type) .portfolio__switch {
+  padding-right: 19px;
+  padding-left: 20px;
+  min-width: 90px;
+}
+
+.portfolio__switch {
+  margin-top: 59px;
+  padding: 7px 0 6px 0;
+  font-family: $font-family__headings;
+  font-size: 16px;
+  font-weight: 400;
+  color: $font-color__portfolio;
+  border: 1px solid $font-color__portfolio;
+  background-color: $background__main;
+}
+
+.portfolio__type--selected .portfolio__switch {
+  background-color: $font-color__portfolio;
+  color: $background__main;
+}
+
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 160px);
+  grid-auto-rows: 160px;
+  grid-gap: 29px 30px;
+  justify-content: center;
+  margin-top: 58px;
+}
+
+.portfolio__button {
+  position: relative;
+  margin-top: 56px;
+  padding: 9px 39px 10px 18px;
+  min-width: 186px;
+  font-size: 18px;
+  background-color: $font-color__portfolio;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 19px;
+    width: 14px;
+    height: 10px;
+    background-image: url("../img/portfolio__arrow-right.svg");
+  }
+}
