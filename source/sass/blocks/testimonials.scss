@@ -1,0 +1,112 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  padding-top: 38px;
+  padding-bottom: 64px;
+  text-align: center;
+}
+
+.testimonials__title {
+  position: relative;
+  margin: 0;
+  margin-left: 3px;
+  font-family: $font-family__text;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: normal;
+  color: $font-color__dark;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: calc(50% - 22px);
+    width: 43px;
+    height: 2px;
+    background-color: $font-color__dark;
+  }
+}
+
+.testimonials__intro {
+  margin-top: 19px;
+  font-family: $font-family__special;
+  font-size: 15.5px;
+  color: $font-color__medium;
+}
+
+.testimonials__intro span {
+  font-family: $font-family__text;
+  font-size: 15px;
+}
+
+.testimonials__content {
+  margin: 0;
+  margin-top: 52px;
+  align-self: center;
+  width: 758px;
+  font-family: $font-family__headings;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: rgb(68, 68, 68);
+}
+
+.testimonials__text {
+  position: relative;
+  margin: 0;
+  padding: 0 120px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 9px);
+    left: 0;
+    width: 14px;
+    height: 22px;
+    background-image: url("../img/testimonials__arrow.png");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 0;
+    width: 14px;
+    height: 22px;
+    background-image: url("../img/testimonials__arrow.png");
+    transform: rotate(180deg);
+  }
+}
+
+.testimonials__author {
+  position: relative;
+  display: inline-block;
+  margin-top: 18px;
+  margin-left: 52px;
+  font-style: normal;
+  text-align: left;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -53px;
+    top: -4px;
+    width: 46px;
+    height: 46px;
+    border: 2px solid rgb(225, 225, 225);
+    border-radius: 50%;
+    background-image: url("../img/testimonials__avatar.jpg");
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.testimonials__author span {
+  display: block;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgb(204, 204, 204);
+}
