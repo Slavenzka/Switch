@@ -1,0 +1,124 @@
+.clients {
+  position: relative;
+  padding-top: 36px;
+  padding-bottom: 62px;
+  text-align: center;
+  background-color: $background__clients;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: rgb(207, 206, 206);
+  }
+}
+
+.clients__title {
+  position: relative;
+  margin: 0;
+  margin-left: 3px;
+  font-family: $font-family__text;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: normal;
+  color: $font-color__dark;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 22px);
+    width: 43px;
+    height: 2px;
+    background-color: $font-color__dark;
+  }
+}
+
+.clients__intro {
+  margin-top: 21px;
+  font-family: $font-family__special;
+  font-size: 15.5px;
+  color: $font-color__medium;
+}
+
+.clients__intro span {
+  font-family: $font-family__text;
+  font-size: 15px;
+}
+
+.clients__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 160px);
+  grid-auto-rows: 70px;
+  grid-gap: 47px 77px;
+  justify-content: center;
+  margin-top: 65px;
+}
+
+.clients__grid picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients__button {
+  display: inline-block;
+  position: relative;
+  margin-top: 47px;
+  padding: 9px 39px 10px 18px;
+  min-width: 186px;
+  font-size: 18px;
+  color: rgb(165, 157, 157);
+  background-color: rgb(221, 220, 220);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 19px;
+    width: 14px;
+    height: 10px;
+    background-image: url("../img/clients__arrow-right.svg");
+  }
+}
+
+// Доводка сетки на гридах до perfect pixel
+
+.clients__logo--yahoo {
+  margin-top: -11px;
+  margin-left: 45px;
+}
+
+.clients__logo--microsoft {
+  margin-top: -2px;
+  margin-left: 22px;
+}
+
+.clients__logo--intel {
+  margin-top: -4px;
+  margin-left: 32px;
+}
+
+.clients__logo--qualcomm {
+  margin-left: 2px;
+}
+
+.clients__logo--cisco {
+  margin-top: -21px;
+  margin-left: 55px;
+}
+
+.clients__logo--apple {
+  margin-top: -21px;
+  margin-left: 21px;
+}
+
+.clients__logo--asus {
+  margin-top: -5px;
+  margin-left: 36px;
+}
