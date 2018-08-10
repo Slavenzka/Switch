@@ -25,10 +25,8 @@ img {
   display: grid;
   grid-template-columns: auto 1170px auto;
 
-  // А IE лучше без гридов. Прости. Не болей.
-
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    width: 1140px;
+    width: 1170px;
     margin: 0 auto;
   }
 }
