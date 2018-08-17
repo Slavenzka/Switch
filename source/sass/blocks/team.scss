@@ -1,0 +1,88 @@
+.team .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 63px;
+  background-color: $background__highlight;
+}
+
+.team__title {
+  position: relative;
+  margin: 0;
+  padding-left: 2px;
+  font-family: $font-family__text;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: normal;
+  color: $font-color__portfolio-title;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: calc(50% - 21px);
+    width: 43px;
+    height: 2px;
+    background-color: $font-color__portfolio-title;
+  }
+}
+
+.team__intro {
+  margin: 0;
+  margin-top: 18px;
+  padding-left: 8px;
+  font-family: $font-family__special;
+  font-size: 15.5px;
+  color: $font-color__portfolio;
+}
+
+.team__intro span {
+  font-family: $font-family__text;
+  font-size: 15px;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 51px;
+  padding: 0;
+  padding-right: 144px;
+  padding-left: 144px;
+  width: 100%;
+  list-style: none;
+}
+
+.team__member:nth-of-type(4) {
+  margin-left: -1px;
+}
+
+.team__contacts {
+  padding-top: 27px;
+  padding-bottom: 25px;
+  width: 100%;
+  min-width: 1170px;
+  text-align: center;
+  background-color: $background__team-contacts;
+}
+
+.team__link {
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 21px;
+  padding-bottom: 9px;
+  padding-left: 20px;
+  min-width: 175px;
+  font-family: $font-family__headings;
+  font-weight: 300;
+  font-size: 19px;
+  color: $font-color__light;
+  text-transform: uppercase;
+  vertical-align: top;
+  background-color: $background__highlight;
+  border-radius: 20px;
+  box-shadow: -1px 5px 5px 0 rgba(0, 0, 0, 0.1);
+}

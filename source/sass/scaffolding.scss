@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  height: 1000px;
   background-color: $background__main;
 }
 
@@ -17,22 +16,15 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
+.container {
+  padding: 0 30px;
+  min-width: 1170px;
 }
 
-.main-grid {
-  display: grid;
-  grid-template-columns: auto 1170px auto;
-
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    width: 1170px;
-    margin: 0 auto;
+@media (min-width: 1171px) {
+  .container {
+    padding: 0 100% * 30 / 1170;
   }
-}
-
-.main-grid > * {
-  grid-column: 2;
 }
 
 .button {

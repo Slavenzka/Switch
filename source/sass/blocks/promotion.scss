@@ -1,12 +1,18 @@
-.promotion {
+.promotion .container {
   position: relative;
   margin-top: -35px;
-  padding: 274px 30px 12px 30px;
+  padding: 274px 0 12px 0;
   background-color: $background__dark;
   background-image: url("../img/promotion-background@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  // background-position: 0 0;
+  background-size: 100%;
+  background-position: center top;
   z-index: 0;
+
+  @media (min-width: 1171px), (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
+    background-image: url("../img/promotion-background@2x.jpg");
+  }
 
   &::before {
     content: "";
