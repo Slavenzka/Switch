@@ -1,0 +1,10 @@
+[2018-08-17 11:24:05] layer "800px-Cisco_logo.svg": Duplicate path: 800px-Cisco_logo.svg
+[2018-08-17 11:24:05] layer "Adik N.K.L": Unsupported extension: l
+[2018-08-17 11:24:05] layer "Zan D.J": Unsupported extension: j
+[2018-08-17 11:24:05] layer "picjumbo.com_foodiesfeed.com_DSC_0084_2": Expected end of input but "_" found.
+[2018-08-17 11:24:05] layer "picjumbo.com_HNCK1587_2": Expected end of input but "_" found.
+[2018-08-17 11:24:05] layer "picjumbo.com_HNCK4536_2": Expected end of input but "_" found.
+[2018-08-17 11:24:05] layer "picjumbo.com_HNCK5654_2": Expected end of input but "_" found.
+[2018-08-17 11:24:05] layer "picjumbo.com_HNCK6001_2": Expected end of input but "_" found.
+[2018-08-17 11:24:05] layer "picjumbo.com_HNCK5654_2 copy": Expected end of input but "_" found.
+[2018-08-17 11:24:05] layer "picjumbo.com_HNCK6001_2 copy": Expected end of input but "_" found.

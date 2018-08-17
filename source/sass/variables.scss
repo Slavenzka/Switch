@@ -2,14 +2,21 @@ $font-family__headings: "ProximaNova", "Arial", sans-serif;
 $font-family__text: "Montserrat", "Arial", sans-serif;
 $font-family__logo: "Nautilus Pompilius", "Arial", sans-serif;
 $font-family__special: "Open Sans", "Arial", sans-serif;
+
 $font-color__light: rgb(255, 255, 255);
 $font-color__medium: rgb(183, 179, 179);
 $font-color__dark: rgb(130, 129, 129);
 $font-color__search: rgb(17, 17, 17);
 $font-color__portfolio-title: rgb(32, 123, 32);
 $font-color__portfolio: rgb(43, 155, 43);
+
 $background__main: rgb(255, 255, 255);
 $background__highlight: rgb(84, 209, 84);
 $background__dark: rgb(51, 51, 51);
 $background__service-icon: rgb(225, 243, 225);
 $background__clients: rgb(242, 241, 241);
+$background__team-contact: rgb(197, 233, 197);
+$background__team-contacts: rgb(62, 186, 62);
+
+$retina__dpi: 144dpi;
+$retina__dppx: 1.5dppx;

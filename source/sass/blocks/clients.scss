@@ -1,4 +1,4 @@
-.clients {
+.clients .container {
   position: relative;
   padding-top: 36px;
   padding-bottom: 62px;
@@ -55,7 +55,7 @@
   display: grid;
   grid-template-columns: repeat(4, 160px);
   grid-auto-rows: 70px;
-  grid-gap: 47px 77px;
+  grid-gap: 47px calc(77px + (100vw - 1170px) / 4);
   justify-content: center;
   margin-top: 65px;
 }
@@ -96,7 +96,7 @@
 
 .clients__logo--microsoft {
   margin-top: -2px;
-  margin-left: 22px;
+  margin-left: 21px;
 }
 
 .clients__logo--intel {
@@ -110,7 +110,7 @@
 
 .clients__logo--cisco {
   margin-top: -21px;
-  margin-left: 55px;
+  margin-left: 54px;
 }
 
 .clients__logo--apple {
@@ -120,5 +120,5 @@
 
 .clients__logo--asus {
   margin-top: -5px;
-  margin-left: 36px;
+  margin-left: 35px;
 }

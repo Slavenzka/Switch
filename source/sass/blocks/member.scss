@@ -1,0 +1,122 @@
+.member {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 134px;
+    left: 50%;
+    width: 2px;
+    height: 77px;
+    background-color: $font-color__portfolio-title;
+  }
+}
+
+.team__member--1.member::before {
+  left: calc(50% - 3px);
+}
+
+.team__member--3.member::before {
+  left: calc(50% - 2px);
+}
+
+.team__member--5.member::before {
+  left: calc(50% - 2px);
+}
+
+.member__frame {
+  width: 124px;
+  height: 124px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.team__member--1 .member__photo {
+  margin-top: 14px;
+  margin-left: 17px;
+}
+
+.team__member--2 .member__photo {
+  margin-top: 19px;
+  margin-left: 24px;
+}
+
+.team__member--3 .member__photo {
+  margin-top: 17px;
+  margin-left: 19px;
+}
+
+.team__member--4 .member__photo {
+  margin-top: 7px;
+  margin-left: -8px;
+}
+
+.team__member--5 .member__photo {
+  margin-top: 17px;
+  margin-left: -34px;
+}
+
+.member__name {
+  margin: 0;
+  margin-top: 96px;
+  margin-left: -5px;
+  font-family: $font-family__headings;
+  font-size: 16px;
+  font-weight: 400;
+  color: $font-color__light;
+}
+
+.team__member--2 .member__name {
+  margin-left: 5px;
+}
+
+.team__member--4 .member__name {
+  margin-left: 10px;
+}
+
+.team__member--5 .member__name {
+  margin-left: -7px;
+}
+
+.member__contacts {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: -9px;
+  padding: 0;
+  padding-top: 4px;
+  padding-right: 5px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  background-color: $background__team-contact;
+  list-style: none;
+  border-radius: 14px;
+}
+
+.member__contact:not(:first-of-type) {
+  margin-left: 7px;
+}
+
+.team__member--2 .member__contacts {
+  margin-left: 3px;
+}
+
+.team__member--4 .member__contacts {
+  margin-left: 9px;
+}
+
+.team__member--5 .member__contacts {
+  margin-left: -10px;
+}
+
+.member__link {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
