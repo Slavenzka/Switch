@@ -1,19 +1,128 @@
 .blog {
   width: 350px;
+  text-align: center;
 }
 
 .blog__title {
+  position: relative;
   margin: 0;
-  text-align: center;
+  margin-left: 13px;
+  text-transform: uppercase;
+  font-family: $font-family__text;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: rgb(221, 221, 221);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: calc(50% - 16px);
+    width: 30px;
+    height: 2px;
+    background-color: rgb(221, 221, 221);
+  }
 }
 
 .blog__posts {
   margin: 0;
   padding: 0;
+  padding-top: 23px;
+  padding-left: 31px;
   list-style: none;
+}
+
+.blog__post {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 9px;
+    left: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 1px;
+    padding-left: 6px;
+    font-family: $font-family__text;
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 300;
+    color: $font-color__light;
+    text-transform: uppercase;
+    border-radius: 3px;
+  }
+}
+
+.blog__post--magazine {
+  &::before {
+    content: "Magazine";
+    background-color: $background__tag--magazine;
+  }
+}
+
+.blog__post--ui {
+  &::before {
+    content: "UI Design";
+    padding-right: 7px;
+    background-color: $background__tag--design;
+  }
+}
+
+.blog__post--photography {
+  &::before {
+    content: "Photography";
+    padding-left: 4px;
+    padding-right: 6px;
+    background-color: $background__tag--photography;
+  }
+}
+
+.blog__post--book {
+  &::before {
+    content: "Book";
+    padding-left: 5px;
+    padding-right: 4px;
+    background-color: $background__tag--book;
+  }
+}
+
+.blog__post:not(:first-of-type) {
+  margin-top: 12px;
+}
+
+.blog__post:nth-child(3) {
+  margin-top: 11px;
+}
+
+.blog__post:nth-child(4) {
+  margin-top: 13px;
+}
+
+.blog__post:nth-child(5) {
+  margin-top: 11px;
 }
 
 .blog__link {
   display: flex;
   align-items: flex-start;
+  font-size: 0;
+}
+
+.blog__picture {
+  width: 53px;
+  height: 53px;
+  border-radius: 4.5px;
+}
+
+.blog__preview {
+  margin: 0;
+  padding-top: 4px;
+  padding-bottom: 30px;
+  padding-left: 6px;
+  font-family: $font-family__text;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(204, 204, 204);
 }
