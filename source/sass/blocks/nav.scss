@@ -27,13 +27,14 @@
     background-color: $background__highlight;
   }
 
-  &:hover {
+  &:not(.nav__link--selected):hover {
     text-shadow: 0.05rem 0 0 $font-color__light;
   }
 }
 
 .nav__link--selected {
   position: relative;
+  cursor: default;
 
   &::before {
     content: "";

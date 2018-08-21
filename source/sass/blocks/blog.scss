@@ -33,8 +33,27 @@
   list-style: none;
 }
 
-.blog__post {
+.blog__post:not(:first-of-type) {
+  margin-top: 12px;
+}
+
+.blog__post:nth-child(3) {
+  margin-top: 11px;
+}
+
+.blog__post:nth-child(4) {
+  margin-top: 13px;
+}
+
+.blog__post:nth-child(5) {
+  margin-top: 11px;
+}
+
+.blog__link {
   position: relative;
+  display: flex;
+  align-items: flex-start;
+  font-size: 0;
 
   &::before {
     content: "";
@@ -55,14 +74,14 @@
   }
 }
 
-.blog__post--magazine {
+.blog__post--magazine .blog__link {
   &::before {
     content: "Magazine";
     background-color: $background__tag--magazine;
   }
 }
 
-.blog__post--ui {
+.blog__post--ui .blog__link {
   &::before {
     content: "UI Design";
     padding-right: 7px;
@@ -70,7 +89,7 @@
   }
 }
 
-.blog__post--photography {
+.blog__post--photography .blog__link {
   &::before {
     content: "Photography";
     padding-left: 4px;
@@ -79,35 +98,13 @@
   }
 }
 
-.blog__post--book {
+.blog__post--book .blog__link {
   &::before {
     content: "Book";
     padding-left: 5px;
     padding-right: 4px;
     background-color: $background__tag--book;
   }
-}
-
-.blog__post:not(:first-of-type) {
-  margin-top: 12px;
-}
-
-.blog__post:nth-child(3) {
-  margin-top: 11px;
-}
-
-.blog__post:nth-child(4) {
-  margin-top: 13px;
-}
-
-.blog__post:nth-child(5) {
-  margin-top: 11px;
-}
-
-.blog__link {
-  display: flex;
-  align-items: flex-start;
-  font-size: 0;
 }
 
 .blog__picture {
