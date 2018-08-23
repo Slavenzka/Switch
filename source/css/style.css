@@ -270,21 +270,16 @@ a {
   text-transform: uppercase; }
 
 .promotion__scroll {
-  position: relative;
   margin-top: 216px;
-  padding: 2px 20px 3px 0;
-  width: 120px;
+  padding: 2px 15px 2px 9px;
+  min-width: 120px;
   font-size: 16px;
   color: #111111;
   background-color: rgba(255, 255, 255, 0.7); }
-  .promotion__scroll::before {
-    content: "";
-    position: absolute;
-    top: 8px;
-    right: 15px;
-    width: 7px;
-    height: 10px;
-    background-image: url("../img/promotion__arrow-down.svg"); }
+
+.promotion__scroll-icon {
+  margin-top: 6px;
+  margin-left: 4px; }
 
 .services .container {
   padding-top: 40px;
@@ -442,7 +437,7 @@ a {
 
 .portfolio__selection {
   margin: 0;
-  margin-left: 4px;
+  margin-left: 3px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,7 +452,7 @@ a {
 
 .portfolio__type:first-of-type .portfolio__switch {
   padding-right: 16px;
-  padding-left: 13px;
+  padding-left: 12px;
   min-width: 122px;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px; }
@@ -470,7 +465,7 @@ a {
   border-bottom-right-radius: 16px; }
 
 .portfolio__type:not(:first-of-type):not(:last-of-type) .portfolio__switch {
-  padding-right: 19px;
+  padding-right: 18px;
   padding-left: 20px;
   min-width: 90px; }
 
@@ -498,26 +493,25 @@ a {
           justify-content: center;
   margin-top: 58px; }
 
+.portfolio__item:nth-of-type(2),
+.portfolio__item:nth-of-type(7) {
+  margin-left: 1px; }
+
 .portfolio__item > img {
   border-radius: 3px; }
 
 .portfolio__button {
-  position: relative;
   margin-top: 56px;
-  padding: 9px 39px 10px 18px;
+  padding: 9px 19px 10px 18px;
   min-width: 186px;
   font-size: 18px;
   background-color: #2b9b2b; }
-  .portfolio__button::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 19px;
-    width: 14px;
-    height: 10px;
-    background-image: url("../img/portfolio__arrow-right.svg"); }
+
+.portfolio__button-icon {
+  margin-left: 3px; }
 
 .testimonials .container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,27 +566,8 @@ a {
   color: #444444; }
 
 .testimonials__text {
-  position: relative;
   margin: 0;
   padding: 0 120px; }
-  .testimonials__text::before {
-    content: "";
-    position: absolute;
-    top: calc(50% - 9px);
-    left: 0;
-    width: 14px;
-    height: 22px;
-    background-image: url("../img/testimonials__arrow.png"); }
-  .testimonials__text::after {
-    content: "";
-    position: absolute;
-    top: calc(50% - 10px);
-    right: 0;
-    width: 14px;
-    height: 22px;
-    background-image: url("../img/testimonials__arrow.png");
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
 
 .testimonials__author {
   position: relative;
@@ -620,6 +595,27 @@ a {
   font-weight: 700;
   line-height: 20px;
   color: #cccccc; }
+
+.testimonials__button {
+  position: absolute;
+  width: 14px;
+  height: 22px;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/testimonials__arrow.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.testimonials__button--prev {
+  top: 183px;
+  left: calc(50% - 379px); }
+
+.testimonials__button--next {
+  top: 182px;
+  right: calc(50% - 379px);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
 
 .clients .container {
   position: relative;
@@ -689,21 +685,16 @@ a {
 
 .clients__button {
   display: inline-block;
-  position: relative;
   margin-top: 47px;
-  padding: 9px 39px 10px 18px;
+  padding: 9px 19px 10px 33px;
   min-width: 186px;
   font-size: 18px;
   color: #a59d9d;
+  vertical-align: middle;
   background-color: #dddcdc; }
-  .clients__button::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 19px;
-    width: 14px;
-    height: 10px;
-    background-image: url("../img/clients__arrow-right.svg"); }
+
+.clients__button-icon {
+  margin-left: 16px; }
 
 .clients__logo--yahoo {
   margin-top: -11px;
@@ -931,7 +922,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #333333; }
+  background-color: #333333;
+  overflow: hidden; }
 
 .about-us {
   display: -webkit-box;
@@ -1192,18 +1184,68 @@ a {
   border-bottom-left-radius: 4px; }
 
 .partners {
-  width: 100%; }
+  position: relative;
+  margin-top: 32px;
+  padding-top: 24px;
+  padding-bottom: 29px;
+  width: 100%;
+  background-color: #222222; }
+  .partners::before {
+    content: "";
+    position: absolute;
+    width: 20vw;
+    height: 100%;
+    top: 0;
+    left: -20vw;
+    background-color: #222222; }
+  .partners::after {
+    content: "";
+    position: absolute;
+    width: 20vw;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    background-color: #222222; }
 
 .partners__title {
+  position: relative;
   margin: 0;
+  margin-left: 14px;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #101010;
   text-align: center; }
+  .partners__title::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: calc(50% - 16px);
+    width: 30px;
+    height: 2px;
+    background-color: #101010; }
 
-.partners__wrapper {
+.partners__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 65px 0 65px;
-  width: 100%; }
+  margin: 0;
+  margin-top: 29px;
+  padding: 0 67px 0 65px;
+  width: 100%;
+  list-style: none; }
+
+.partners__item--tc {
+  margin-left: 20px; }
+
+.partners__item--bbc {
+  margin-top: 1px;
+  margin-left: 18px; }
+
+.partners__item--nyt {
+  margin-top: 3px; }
