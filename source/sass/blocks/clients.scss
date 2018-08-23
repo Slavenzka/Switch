@@ -68,23 +68,17 @@
 
 .clients__button {
   display: inline-block;
-  position: relative;
   margin-top: 47px;
-  padding: 9px 39px 10px 18px;
+  padding: 9px 19px 10px 33px;
   min-width: 186px;
   font-size: 18px;
   color: rgb(165, 157, 157);
+  vertical-align: middle;
   background-color: rgb(221, 220, 220);
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 19px;
-    width: 14px;
-    height: 10px;
-    background-image: url("../img/clients__arrow-right.svg");
-  }
+.clients__button-icon {
+  margin-left: 16px;
 }
 
 // Доводка сетки на гридах до perfect pixel

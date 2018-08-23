@@ -44,7 +44,7 @@
 
 .portfolio__selection {
   margin: 0;
-  margin-left: 4px;
+  margin-left: 3px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -57,7 +57,7 @@
 
 .portfolio__type:first-of-type .portfolio__switch {
   padding-right: 16px;
-  padding-left: 13px;
+  padding-left: 12px;
   min-width: 122px;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
@@ -72,7 +72,7 @@
 }
 
 .portfolio__type:not(:first-of-type):not(:last-of-type) .portfolio__switch {
-  padding-right: 19px;
+  padding-right: 18px;
   padding-left: 20px;
   min-width: 90px;
 }
@@ -102,25 +102,23 @@
   margin-top: 58px;
 }
 
+.portfolio__item:nth-of-type(2),
+.portfolio__item:nth-of-type(7) {
+  margin-left: 1px;
+}
+
 .portfolio__item > img {
   border-radius: 3px;
 }
 
 .portfolio__button {
-  position: relative;
   margin-top: 56px;
-  padding: 9px 39px 10px 18px;
+  padding: 9px 19px 10px 18px;
   min-width: 186px;
   font-size: 18px;
   background-color: $font-color__portfolio;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 19px;
-    width: 14px;
-    height: 10px;
-    background-image: url("../img/portfolio__arrow-right.svg");
-  }
+.portfolio__button-icon {
+  margin-left: 3px;
 }

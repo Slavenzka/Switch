@@ -5,7 +5,6 @@
   background-color: $background__dark;
   background-image: url("../img/promotion-background@1x.jpg");
   background-repeat: no-repeat;
-  // background-position: 0 0;
   background-size: 100%;
   background-position: center top;
   z-index: 0;
@@ -43,21 +42,15 @@
 }
 
 .promotion__scroll {
-  position: relative;
   margin-top: 216px;
-  padding: 2px 20px 3px 0;
-  width: 120px;
+  padding: 2px 15px 2px 9px;
+  min-width: 120px;
   font-size: 16px;
   color: rgb(17, 17, 17);
   background-color: rgba(255, 255, 255, 0.7);
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 8px;
-    right: 15px;
-    width: 7px;
-    height: 10px;
-    background-image: url("../img/promotion__arrow-down.svg");
-  }
+.promotion__scroll-icon {
+  margin-top: 6px;
+  margin-left: 4px;
 }
