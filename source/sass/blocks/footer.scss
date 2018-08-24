@@ -1,12 +1,7 @@
-.footer {
-  overflow: hidden;
-}
-
 .footer > .container {
-  padding-top: 29px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 29px;
   background-color: $background__dark;
-  overflow: hidden;
 }
