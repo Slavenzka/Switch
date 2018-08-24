@@ -50,7 +50,7 @@ gulp.task("images", function() {
 gulp.task("webp", function() {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("sprite", function() {

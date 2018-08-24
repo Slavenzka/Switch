@@ -16,7 +16,7 @@
   color: $font-color__search;
 }
 
-.search__input:-ms-input-placeholder {
+.search__input::-ms-input-placeholder {
   font-family: $font-family__headings;
   font-size: 16px;
   line-height: normal;

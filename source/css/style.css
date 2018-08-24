@@ -64,7 +64,8 @@ a {
 
 .container {
   padding: 0 30px;
-  min-width: 1170px; }
+  min-width: 1170px;
+  overflow: hidden; }
 
 @media (min-width: 1171px) {
   .container {
@@ -224,7 +225,7 @@ a {
   font-weight: 300;
   color: #111111; }
 
-.search__input:-ms-input-placeholder {
+.search__input::-ms-input-placeholder {
   font-family: "ProximaNova", "Arial", sans-serif;
   font-size: 16px;
   line-height: normal;
@@ -483,19 +484,37 @@ a {
   background-color: #2b9b2b;
   color: white; }
 
-.portfolio__grid {
-  display: grid;
-  grid-template-columns: repeat(5, 160px);
-  grid-auto-rows: 160px;
-  grid-gap: 29px calc(30px + (100vw - 1170px) / 5);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 58px; }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .portfolio__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 58px auto 0 auto;
+    width: 920px; }
+  .portfolio__item:first-of-type {
+    margin-bottom: 29px; }
+  .portfolio__item:not(:nth-of-type(5n+1)) {
+    margin: 0;
+    margin-left: 3.26087%; } }
 
-.portfolio__item:nth-of-type(2),
-.portfolio__item:nth-of-type(7) {
-  margin-left: 1px; }
+@supports (grid-area: auto) {
+  .portfolio__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 160px);
+    grid-auto-rows: 160px;
+    grid-gap: 29px calc(30px + (100vw - 1170px) / 5);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 58px; }
+  .portfolio__item:nth-of-type(2),
+  .portfolio__item:nth-of-type(7) {
+    margin-left: 1px; } }
 
 .portfolio__item > img {
   border-radius: 3px; }
@@ -598,6 +617,7 @@ a {
 
 .testimonials__button {
   position: absolute;
+  padding: 0;
   width: 14px;
   height: 22px;
   font-size: 0;
@@ -663,14 +683,57 @@ a {
   font-size: 15px; }
 
 .clients__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 160px);
-  grid-auto-rows: 70px;
-  grid-gap: 47px calc(77px + (100vw - 1170px) / 4);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 65px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  margin: 65px auto 0 auto;
+  width: 920px; }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .clients__grid {
+    height: 170px; }
+  .clients__grid picture:not(:nth-of-type(4n+1)) {
+    margin-left: 80px; } }
+
+@supports (grid-area: auto) {
+  .clients__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 160px);
+    grid-auto-rows: 70px;
+    grid-gap: 47px calc(77px + (100vw - 1170px) / 4);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 65px; }
+  .clients__logo--google {
+    margin-bottom: 0; }
+  .clients__logo--yahoo {
+    margin-top: -11px;
+    margin-left: 45px; }
+  .clients__logo--microsoft {
+    margin-top: -2px;
+    margin-left: 21px; }
+  .clients__logo--intel {
+    margin-top: -4px;
+    margin-left: 32px; }
+  .clients__logo--qualcomm {
+    margin-left: 2px; }
+  .clients__logo--cisco {
+    margin-top: -21px;
+    margin-left: 54px; }
+  .clients__logo--apple {
+    margin-top: -21px;
+    margin-left: 21px; }
+  .clients__logo--asus {
+    margin-top: -5px;
+    margin-left: 35px; } }
 
 .clients__grid picture {
   display: -webkit-box;
@@ -695,33 +758,6 @@ a {
 
 .clients__button-icon {
   margin-left: 16px; }
-
-.clients__logo--yahoo {
-  margin-top: -11px;
-  margin-left: 45px; }
-
-.clients__logo--microsoft {
-  margin-top: -2px;
-  margin-left: 21px; }
-
-.clients__logo--intel {
-  margin-top: -4px;
-  margin-left: 32px; }
-
-.clients__logo--qualcomm {
-  margin-left: 2px; }
-
-.clients__logo--cisco {
-  margin-top: -21px;
-  margin-left: 54px; }
-
-.clients__logo--apple {
-  margin-top: -21px;
-  margin-left: 21px; }
-
-.clients__logo--asus {
-  margin-top: -5px;
-  margin-left: 35px; }
 
 .team .container {
   display: -webkit-box;
@@ -912,6 +948,9 @@ a {
   padding: 0;
   font-size: 0; }
 
+.footer {
+  overflow: hidden; }
+
 .footer > .container {
   padding-top: 29px;
   display: -webkit-box;
@@ -962,6 +1001,7 @@ a {
   margin-top: 27px;
   padding-right: 30px;
   padding-left: 0;
+  width: 100%;
   font-family: "ProximaNova", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;

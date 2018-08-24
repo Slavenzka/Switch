@@ -19,6 +19,7 @@ a {
 .container {
   padding: 0 30px;
   min-width: 1170px;
+  overflow: hidden;
 }
 
 @media (min-width: 1171px) {
