@@ -541,7 +541,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 38px;
-  padding-bottom: 64px;
+  padding-bottom: 61px;
   text-align: center; }
 
 .testimonials__title {
@@ -588,34 +588,51 @@ a {
 
 .testimonials__text {
   margin: 0;
-  padding: 0 120px; }
+  padding: 0 120px;
+  min-height: 57px; }
 
 .testimonials__author {
-  position: relative;
-  display: inline-block;
-  margin-top: 18px;
-  margin-left: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  margin-top: 14px;
+  padding-left: 285px;
+  height: 46px;
   font-style: normal;
   text-align: left; }
-  .testimonials__author::before {
-    content: "";
-    position: absolute;
-    left: -53px;
-    top: -4px;
-    width: 46px;
-    height: 46px;
-    border: 2px solid #e1e1e1;
-    border-radius: 50%;
-    background-image: url("../img/testimonials__avatar.jpg");
-    background-size: 30px 32px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%; }
 
-.testimonials__author span {
+.testimonials__name {
+  margin-top: 4px; }
+
+.testimonials__rank {
   display: block;
   font-weight: 700;
   line-height: 20px;
   color: #cccccc; }
+
+.testimonials span {
+  margin-left: 7px; }
+
+.testimonials picture {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid #e1e1e1; }
+
+.testimonials__avatar {
+  margin-top: 5px;
+  margin-left: 6px;
+  width: 30px;
+  height: 32px; }
 
 .testimonials__button {
   position: absolute;
@@ -627,7 +644,8 @@ a {
   background-color: transparent;
   background-image: url("../img/testimonials__arrow.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  cursor: pointer; }
 
 .testimonials__button--prev {
   top: 183px;
