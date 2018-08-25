@@ -116,7 +116,9 @@ a {
 
 .header-main {
   position: relative;
-  z-index: 1; }
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 3%, transparent); }
 
 .header-main .container {
   display: -webkit-box;
@@ -153,6 +155,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 350px;
@@ -235,7 +239,6 @@ a {
   color: #111111; }
 
 .promotion .container {
-  position: relative;
   margin-top: -35px;
   padding: 274px 0 12px 0;
   background-color: #333333;
@@ -247,15 +250,6 @@ a {
   @media (min-width: 1171px), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .promotion .container {
       background-image: url("../img/promotion-background@2x.jpg"); } }
-  .promotion .container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 38px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, rgba(0, 0, 0, 0.5)), to(transparent));
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 3%, transparent); }
 
 .promotion__motto {
   margin: 0;
@@ -287,7 +281,8 @@ a {
 .services .container {
   padding-top: 40px;
   padding-bottom: 73px;
-  text-align: center; }
+  text-align: center;
+  background-color: white; }
 
 .services__title {
   position: relative;
@@ -330,6 +325,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none; }
 
 .service {
@@ -373,6 +370,9 @@ a {
   line-height: normal;
   color: #828181; }
 
+.service:nth-of-type(3n) .service__title {
+  margin-left: -2px; }
+
 .service__description {
   margin: 0;
   margin-top: 15px;
@@ -391,13 +391,13 @@ a {
   font-size: 16px;
   font-weight: 700; }
 
-.service:first-of-type .service__button {
+.service:nth-of-type(3n+1) .service__button {
   margin-left: 108px; }
 
-.service:nth-of-type(2) .service__button {
+.service:nth-of-type(3n-1) .service__button {
   margin-left: 112px; }
 
-.service:nth-of-type(3) .service__button {
+.service:nth-of-type(3n) .service__button {
   margin-left: 116px; }
 
 .portfolio .container {
@@ -815,6 +815,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   margin-top: 51px;
   padding: 0;
