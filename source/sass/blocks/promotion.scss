@@ -1,5 +1,4 @@
 .promotion .container {
-  position: relative;
   margin-top: -35px;
   padding: 274px 0 12px 0;
   background-color: $background__dark;
@@ -11,16 +10,6 @@
 
   @media (min-width: 1171px), (min-resolution: $retina__dpi), (min-resolution: $retina__dppx) {
     background-image: url("../img/promotion-background@2x.jpg");
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 38px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 3%, transparent);
   }
 }
 

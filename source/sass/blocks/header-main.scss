@@ -1,6 +1,7 @@
 .header-main {
   position: relative;
-  z-index: 1;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 3%, transparent);
 }
 
 .header-main .container {

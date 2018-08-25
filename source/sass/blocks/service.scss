@@ -52,6 +52,10 @@
   color: $font-color__dark;
 }
 
+.service:nth-of-type(3n) .service__title {
+  margin-left: -2px;
+}
+
 .service__description {
   margin: 0;
   margin-top: 15px;
@@ -72,14 +76,14 @@
   font-weight: 700;
 }
 
-.service:first-of-type .service__button {
+.service:nth-of-type(3n+1) .service__button {
   margin-left: 108px;
 }
 
-.service:nth-of-type(2) .service__button {
+.service:nth-of-type(3n-1) .service__button {
   margin-left: 112px;
 }
 
-.service:nth-of-type(3) .service__button {
+.service:nth-of-type(3n) .service__button {
   margin-left: 116px;
 }

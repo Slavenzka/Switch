@@ -2,6 +2,7 @@
   padding-top: 40px;
   padding-bottom: 73px;
   text-align: center;
+  background-color: $background__main;
 }
 
 .services__title {
@@ -46,5 +47,6 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
 }
