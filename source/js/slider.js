@@ -11,9 +11,6 @@
   const prev = slider.querySelector('.testimonials__button--prev');
   const next = slider.querySelector('.testimonials__button--next');
   const message = slider.querySelector('.testimonials__text');
-  const name = slider.querySelector('.testimonials__name');
-  const rank = slider.querySelector('.testimonials__rank');
-  const avatar = slider.querySelector('.testimonials__avatar');
 
   function getMaxLength (array1, array2, array3, array4) {
     let array = [array1.length, array2.length, array3.length, array4.length];
@@ -43,6 +40,10 @@
   }
 
   function applyNewValues (array, index) {
+    const name = slider.querySelector('.testimonials__name');
+    const rank = slider.querySelector('.testimonials__rank');
+    const avatar = slider.querySelector('.testimonials__avatar');
+
     message.innerHTML = array[index].message;
     name.textContent = array[index].name;
     rank.textContent = array[index].rank;
