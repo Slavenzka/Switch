@@ -9,11 +9,11 @@
     <link rel="preload" href="fonts/proximanova-regular-webfont.woff2" as="font">
   </head>
 
-  <body>
+  <body id="body">
 
     <svg style="display: none;">
       <symbol id="promotion__arrow-down">
-        <path d="M625.8,630v7.346l-2.8-2.778v1.964L626.5,640l3.5-3.473v-1.964l-2.8,2.778V630h-1.4Z" transform="translate(-623 -630)" fill="#111"/>
+        <path d="M625.8,630v7.346l-2.8-2.778v1.964L626.5,640l3.5-3.473v-1.964l-2.8,2.778V630h-1.4Z" transform="translate(-623 -630)"/>
       </symbol>
       <symbol id="portfolio__arrow-right">
         <path d="M645,1912h10.285l-3.89,4h2.75l4.863-5-4.863-5h-2.75l3.89,4H645v2Z" transform="translate(-645 -1906)" fill="rgb(255, 255, 255)"/>
@@ -35,7 +35,7 @@
       </symbol>
     </svg>
 
-      <header class="header-main">
+      <header class="header-main" id="header-main">
         <div class="container">
           <nav class="header-main__navigation nav">
             <ul class="nav__list">
@@ -84,12 +84,12 @@
             <button type="button" class="button promotion__button">
               Work with us
             </button>
-            <button type="button" class="button promotion__scroll">
+            <a class="button promotion__scroll" href="#our-services">
               scroll down
               <svg class="promotion__scroll-icon" width="7" height="10" viewbox="0 0 7 10">
                 <use xlink:href="#promotion__arrow-down"></use>
               </svg>
-            </button>
+            </a>
           </div>
         </section>
         <section class="services" id="our-services">
@@ -644,8 +644,16 @@
             </section>
           </div>
         </footer>
+        <div class="scroll">
+          <a class="scroll-passive" href="#header-main">
+            <svg class="scroll__icon" width="21" height="30" viewbox="0 0 7 10">
+              <use xlink:href="#promotion__arrow-down"></use>
+            </svg>
+          </a>
+        </div>
       </main>
       <script src="js/slider.js"></script>
+      <script src="js/scroll.js"></script>
   </body>
 
 </html>

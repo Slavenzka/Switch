@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -68,4 +69,33 @@ a {
   background-color: $background__team-contact;
   list-style: none;
   border-radius: 14px;
+}
+
+.scroll-passive {
+  position: fixed;
+  left: 25px;
+  top: 500px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(186, 186, 186);
+  border-radius: 50%;
+  transform: translateY(-50px);
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.scroll-active {
+  transform: translateY(50px);
+  opacity: 0.5;
+}
+
+.scroll__icon {
+  margin-top: 10px;
+  margin-left: 14px;
+  transform-origin: 50% 50%;
+  transform: rotate(180deg);
+}
+
+.scroll__icon use {
+  fill: rgb(255, 255, 255);
 }
